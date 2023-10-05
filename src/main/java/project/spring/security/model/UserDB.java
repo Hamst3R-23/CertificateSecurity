@@ -39,7 +39,7 @@ public class UserDB {
         this.certificate = certificate;
     }
 
-    public Set<GrantedAuthority> authorities(){
+    public Set<GrantedAuthority> getAuthorities(){
 
         HashSet<GrantedAuthority> authorities = new HashSet<>();
 
