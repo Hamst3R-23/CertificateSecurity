@@ -14,24 +14,24 @@ public class Controller {
         return new ResponseEntity<>(new JsonResponse("Role_Admin"), HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/clown")
+    @GetMapping("/user")
     public ResponseEntity<JsonResponse> clown() {
-        return new ResponseEntity<>(new JsonResponse("Role_Clown"), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(new JsonResponse("Role_User"), HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/clownadmin")
-    public ResponseEntity<JsonResponse> clownAndAdmin(){
-        return new ResponseEntity<>(new JsonResponse("Role_Clown or Role_Admin"), HttpStatus.ACCEPTED);
+    @GetMapping("/info")
+    public ResponseEntity<JsonResponse> info(){
+        return new ResponseEntity<>(new JsonResponse("Role_User or Role_Admin"), HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/dog")
+    @GetMapping("/hr")
     public ResponseEntity<JsonResponse> dog(){
-        return new ResponseEntity<>(new JsonResponse("Role_Dog"), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(new JsonResponse("Role_HR"), HttpStatus.ACCEPTED);
     }
 
-    @GetMapping("/cat")
+    @GetMapping("/vacancies")
     public ResponseEntity<JsonResponse> cat(){
-        return new ResponseEntity<>(new JsonResponse("Role_Cat"), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(new JsonResponse("Role_Admin or Role_User or Role_HR"), HttpStatus.ACCEPTED);
     }
 
 
